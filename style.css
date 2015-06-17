@@ -31,9 +31,8 @@ body {
 }
 
 .box {
-    height: 85px;
-    margin: 1px;
-    font-size: 15px;
+  margin: 1px;
+  height: 130px;
 }
 
 .box .box-title {
