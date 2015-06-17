@@ -27,7 +27,7 @@
         <div class="col-md-12" style="margin: 0; padding: 0;">
             <div ng-repeat="(key, server) in servers | orderByValue">
                 <div class="col-md-1 box animated fadeIn" ng-repeat="(key, box) in server.data">
-                    <div ng-class="getBoxClass(box)">
+                    <div ng-class="getBoxClass(box)" style="padding: 2px;">
                         <span class="box-title">{{box.name}}</span>
                         <span class="inner-box" ng-if="box.reporting">CPU: {{box.summary.cpu}}%</span>
                         <span class="inner-box" ng-if="box.reporting">Fullest Disk : {{box.summary.fullest_disk}}%</span>
