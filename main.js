@@ -106,7 +106,7 @@ function MainCtrl($scope, $resource, poller, localStorageService) {
     };
 
     $scope.playAlarm = function () {
-        document.getElementById('soundAlarm').play();
+        
     };
 
     $scope.saveSettings = function () {
