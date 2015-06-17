@@ -25,7 +25,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <div>
+            <div ng-repeat="(key, server) in servers | orderByValue">
                 <div ng-repeat="(key, box) in server.data">
                     <div class="col-xs-2 box animated fadeIn" ng-class="getBoxClass(box)">
                         <span class="box-title">{{box.name}}</span>
