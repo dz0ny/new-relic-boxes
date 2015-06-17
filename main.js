@@ -14,7 +14,6 @@ function MainCtrl($scope, $resource, poller, localStorageService) {
         grey: 3
     };
 
-    $scope.applications = {};
     $scope.servers = {};
     $scope.size = {};
 
@@ -114,10 +113,10 @@ function MainCtrl($scope, $resource, poller, localStorageService) {
         localStorageService.set('apiKey', $scope.user.apiKey);
         localStorageService.set('name', $scope.user.name);
         localStorageService.set('favicon', $scope.user.favicon);
-        $scope.setPollers(['applications', 'servers']);
+        $scope.setPollers(['servers']);
     };
 
-    $scope.setPollers(['applications', 'servers']);
+    $scope.setPollers(['servers']);
 }
 
 var app = angular.module('myApp', ['ngResource', 'emguo.poller', 'LocalStorageModule']);
