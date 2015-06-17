@@ -34,7 +34,7 @@
 
                     <div>
                         <div ng-repeat="(key, box) in server.data">
-                            <div class="col-md-1 animated fadeIn" ng-class="getBoxClass(box)">
+                            <div class="col-md-1 animated fadeIn box" ng-class="getBoxClass(box)">
                                 <span class="box-title">{{box.name}}</span>
                                 <span class="inner-box" ng-if="box.reporting">CPU: {{box.summary.cpu}}%</span>
                                 <span class="inner-box" ng-if="box.reporting">Fullest Disk : {{box.summary.fullest_disk}}%</span>
